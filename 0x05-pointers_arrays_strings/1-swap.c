@@ -5,11 +5,9 @@
  * @s: input string.
  * Return: length of a string.
  */
-int _strlen(char *s)
+void swap_int(int *a, int *b)
 {
-	int count = 0;
-
-	while (*(s + count) != '\0')
-		count++;
-	return (count);
+	int tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
